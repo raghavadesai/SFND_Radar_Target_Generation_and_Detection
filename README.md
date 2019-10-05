@@ -42,11 +42,12 @@ Implementation steps for the 2D CFAR process.
 Selection of Training, Guard cells and offset.
 Steps taken to suppress the non-thresholded cells at the edges.
 
-'''MATLAB	
    % Use RDM[x,y] as the matrix from the output of 2D FFT for implementing
    % CFAR
    
    % CFAR
+   
+   '''MATLAB
    signal_after_threshodling = RDM/max(max(RDM));
 
    for i = Tr+Gr+1:(Nr/2)-(Gr+Tr)
@@ -87,6 +88,5 @@ Steps taken to suppress the non-thresholded cells at the edges.
    % set those values to 0. 
    signal_after_threshodling(union(1:(Tr+Gr),end-(Tr+Gr-1):end),:) = 0; 
    signal_after_threshodling(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
-
-'''
+   '''
 

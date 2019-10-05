@@ -11,7 +11,7 @@ Steps taken to suppress the non-thresholded cells at the edges.
    
    % CFAR
    
-'''MATLAB
+'''c++
 
    signal_after_threshodling = RDM/max(max(RDM));
 

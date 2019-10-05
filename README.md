@@ -1,39 +1,3 @@
-CRITERIA
-MEETS SPECIFICATIONS
-Using the given system requirements, design
-a FMCW waveform. Find its Bandwidth (B), chirp time (Tchirp) and slope of the chirp.
-
-For given system requirements the calculated slope should be around 2e13
-DONE
-
-Simulation Loop
-
-CRITERIA
-MEETS SPECIFICATIONS
-Simulate Target movement and calculate the beat or mixed signal for every timestamp.
-
-A beat signal should be generated such that once range FFT implemented, it gives the correct range i.e the initial position of target assigned with an error margin of +/- 10 meters.
-DONE
-
-Range FFT (1st FFT)
-
-CRITERIA
-MEETS SPECIFICATIONS
-Implement the Range FFT on the Beat or Mixed Signal and plot the result.
-
-A correct implementation should generate a peak at the correct range, i.e the
-initial position of target assigned with an error margin of +/- 10 meters.
-DONE
-
-2D CFAR
-
-CRITERIA
-MEETS SPECIFICATIONS
-Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map.
-
-The 2D CFAR processing should be able to suppress the noise and separate
-the target signal. The output should match the image shared in walkthrough.
-
 Create a CFAR README File
 
 In a README file, write brief explanations for the following:
@@ -47,7 +11,7 @@ Steps taken to suppress the non-thresholded cells at the edges.
    
    % CFAR
    
-   '''MATLAB
+''' MATLAB
    signal_after_threshodling = RDM/max(max(RDM));
 
    for i = Tr+Gr+1:(Nr/2)-(Gr+Tr)
@@ -88,5 +52,5 @@ Steps taken to suppress the non-thresholded cells at the edges.
    % set those values to 0. 
    signal_after_threshodling(union(1:(Tr+Gr),end-(Tr+Gr-1):end),:) = 0; 
    signal_after_threshodling(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
-   '''
+'''
 

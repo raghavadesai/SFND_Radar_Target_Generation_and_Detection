@@ -1,3 +1,5 @@
+
+<img src="images/RDM.jpg" width="820" height="248" />
 Create a CFAR README File
 
 In a README file, write brief explanations for the following:

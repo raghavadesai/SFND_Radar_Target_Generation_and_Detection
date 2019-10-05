@@ -1,4 +1,4 @@
-## See my_radar_target_generation_detection.m
+## See my_radar_target_generation_and_detection.m
 
 <img src="RangeFFT.jpg" width="820" height="248" />
 <img src="RDM.jpg" width="820" height="248" />

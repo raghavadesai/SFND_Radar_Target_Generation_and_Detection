@@ -79,13 +79,13 @@ end
 
 
 
-% *%TODO* :
-% The process above will generate a thresholded block, which is smaller 
-%than the Range Doppler Map as the CUT cannot be located at the edges of
-%matrix. Hence,few cells will not be thresholded. To keep the map size same
-% set those values to 0. 
-signal_after_threshodling(union(1:(Tr+Gr),end-(Tr+Gr-1):end),:) = 0; 
-signal_after_threshodling(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
+   % *%TODO* :
+   % The process above will generate a thresholded block, which is smaller 
+   %than the Range Doppler Map as the CUT cannot be located at the edges of
+   %matrix. Hence,few cells will not be thresholded. To keep the map size same
+   % set those values to 0. 
+   signal_after_threshodling(union(1:(Tr+Gr),end-(Tr+Gr-1):end),:) = 0; 
+   signal_after_threshodling(:,union(1:(Td+Gd),end-(Td+Gd-1):end)) = 0;
 
 '''
 
